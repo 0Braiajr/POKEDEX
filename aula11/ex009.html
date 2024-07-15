@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou Nativo</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Nativo</h1>
+    Nacionalidade: <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar() {
+            var txtp = document.getElementById('txtpaís')
+            var res = document.querySelector('div#res')
+            var país = txtpaís.value
+            if (país == 'brasileiro') {
+                res.innerHTML += '<p>Você nasceu no <strong>Brasil</strong></p>'
+            }
+            else {
+                res.innerHTML += '<p> Você é estrangeiro</p>'
+            
+                
+                
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+ 
+ 
